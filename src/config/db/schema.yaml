@@ -1,0 +1,31 @@
+# 
+# This schema file is auto generated and synchronized with the database.
+# Editing it will have no effect.
+# 
+---
+version: 1708325190844
+collections:
+  - name: Taskie_projects_collection
+    is_edge_collection: false
+  - name: Taskie_backlogs_collection
+    is_edge_collection: false
+  - name: Taskie_backlog_groups_collection
+    is_edge_collection: false
+  - name: Taskie_roles_collection
+    is_edge_collection: false
+  - name: Taskie_users_collection
+    is_edge_collection: false
+  - name: Taskie_levels_collection
+    is_edge_collection: false
+  - name: Taskie_tags_collection
+    is_edge_collection: false
+  - name: Taskie_statuses_collection
+    is_edge_collection: false
+  - name: Taskie_priorities_collection
+    is_edge_collection: false
+  - name: Taskie_modules_collection
+    is_edge_collection: false
+  - name: Taskie_tasks_collection
+    is_edge_collection: false
+  - name: Taskie_edge_collection
+    is_edge_collection: true

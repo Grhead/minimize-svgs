@@ -1,0 +1,16 @@
+[package]
+name = "test-aragog"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+aragog_cli = "0.6.0"
+aragog = { version = "0.17.1", features = ["blocking"] }
+tokio = { version = "1.36.0", features = ["rt", "rt-multi-thread", "macros"] }
+serde = "1.0.196"
+dotenv = "0.15.0"
+async-graphql = "7.0.2"
+uuid = { version = "1.7.0", features = ["v4", "fast-rng"] }
+

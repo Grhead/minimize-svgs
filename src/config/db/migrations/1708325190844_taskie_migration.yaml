@@ -1,0 +1,71 @@
+# The migration files contain two sections: 
+# - up: The commands to execute on migration 
+# - down: The commands to execute on rollback (optional) 
+# check https://docs.rs/aragog_cli for complete documentation and examples 
+---
+up:
+  - create_collection:
+      name: Taskie_projects_collection
+  - create_collection:
+      name: Taskie_backlogs_collection
+  - create_collection:
+      name: Taskie_backlog_groups_collection
+  - create_collection:
+      name: Taskie_roles_collection
+  - create_collection:
+      name: Taskie_users_collection
+  - create_collection:
+      name: Taskie_levels_collection
+  - create_collection:
+      name: Taskie_tags_collection
+  - create_collection:
+      name: Taskie_statuses_collection
+  - create_collection:
+      name: Taskie_priorities_collection
+  - create_collection:
+      name: Taskie_modules_collection
+  - create_collection:
+      name: Taskie_files_collection
+  - create_collection:
+      name: Taskie_tasks_collection
+  - create_collection:
+      name: Taskie_completness_collection
+  - create_edge_collection:
+      name: Taskie_edge_collection
+#  - create_graph:
+#      name: Taskie_graph
+#      edge_definitions:
+#        - collection: Taskie_edge_collection
+#          from: [ "Taskie_collection" ]
+#          to: [ "Taskie_collection" ]
+down:
+  - delete_collection:
+      name: Taskie_projects_collection
+  - delete_collection:
+      name: Taskie_backlogs_collection
+  - delete_collection:
+      name: Taskie_backlog_groups_collection
+  - delete_collection:
+      name: Taskie_roles_collection
+  - delete_collection:
+      name: Taskie_users_collection
+  - delete_collection:
+      name: Taskie_levels_collection
+  - delete_collection:
+      name: Taskie_tags_collection
+  - delete_collection:
+      name: Taskie_statuses_collection
+  - delete_collection:
+      name: Taskie_priorities_collection
+  - delete_collection:
+      name: Taskie_modules_collection
+  - delete_collection:
+      name: Taskie_tasks_collection
+  - delete_collection:
+      name: Taskie_completness_collection
+  - delete_collection:
+      name: Taskie_files_collection
+  - delete_edge_collection:
+      name: Taskie_edge_collection
+#  - delete_graph:
+#      name: Taskie_graph
